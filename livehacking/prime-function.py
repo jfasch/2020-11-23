@@ -13,4 +13,7 @@ def is_prime(number):
         return True
 
 number = int(sys.argv[1])
-
+if is_prime(number):
+    print(number, 'is prime')
+else:
+    print(number, 'is not prime')
