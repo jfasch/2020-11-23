@@ -1,5 +1,8 @@
 f = open('/etc/passwd')
 
+
+# read file into list of records
+# ------------------------------
 users = []
 
 for line in f:
@@ -17,4 +20,7 @@ for line in f:
 
     users.append(user)
 
-print(users)
+# do something with it
+# --------------------
+for user in users:
+    print(f"name: {user['name']}, uid: {user['uid']}")

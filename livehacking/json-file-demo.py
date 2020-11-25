@@ -12,6 +12,6 @@ data = [
     },
 ]
 
-f = open('/tmp/woswasi.json', 'x')
-
-json.dump(data, f)
+# with: "context manager"
+with open('/tmp/woswasi.json', 'x') as f:
+    json.dump(data, f)
